@@ -56,7 +56,7 @@ c <- length(which(mtcars$vs == 0 & mtcars$cyl == 8))
 d <- length(which(mtcars$vs == 1 & mtcars$cyl == 4))
 e <- length(which(mtcars$vs == 1 & mtcars$cyl == 6))
 vscyl <- c(a,b,c,d,e)
-pie3D(vscyl, labels = name, explode = 0.1, main = "Трехмерная круговая диаграмма")
+pie3D(vscyl, explode = 0.1, main = "Трехмерная круговая диаграмма")
 
 
 boxplot(mpg ~ cyl, data = mtcars, xlab = "Число цилиндров", ylab = "Мили на шаллон", col = "blue")
